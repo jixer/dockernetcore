@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  statelessvaluesmicroservice:
+    image: gsxr/statelessvaluesmicroservice:Debug
+    environment:
+      - REMOTE_DEBUGGING=${REMOTE_DEBUGGING}
+    ports:
+      - "80:80"
+    volumes:
+      - .:/app

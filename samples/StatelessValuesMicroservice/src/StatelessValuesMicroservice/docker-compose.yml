@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+  statelessvaluesmicroservice:
+    image: gsxr/statelessvaluesmicroservice
+    ports:
+      - "80:80"
