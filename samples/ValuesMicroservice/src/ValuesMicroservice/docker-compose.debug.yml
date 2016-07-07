@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+  valuesmicroservicedb:
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=test123!
+  valuesmicroservice:
+    depends_on:
+      - valuesmicroservicedb
+    image: username/valuesmicroservice:Debug
+    environment:
+      - REMOTE_DEBUGGING=${REMOTE_DEBUGGING}
+      - POSTGRES_DB=valuesmicroservicedb
+      - POSTGRES_PASSWORD=test123!
+    ports:
+      - "80:80"
+    links:
+      - valuesmicroservicedb
+    volumes:
+      - .:/app
