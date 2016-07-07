@@ -1,4 +1,4 @@
-﻿namespace ValuesMicroservice.Entity
+﻿namespace StatefulValuesMicroservice.Entity
 {
     public class StoredValue
     {

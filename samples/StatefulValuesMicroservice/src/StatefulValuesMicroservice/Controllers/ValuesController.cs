@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using ValuesMicroservice.Data;
-using ValuesMicroservice.Entity;
+using StatefulValuesMicroservice.Data;
+using StatefulValuesMicroservice.Entity;
 
-namespace ValuesMicroservice.Controllers
+namespace StatefulValuesMicroservice.Controllers
 {
     [Route("api/[controller]")]
     public class ValuesController : Controller

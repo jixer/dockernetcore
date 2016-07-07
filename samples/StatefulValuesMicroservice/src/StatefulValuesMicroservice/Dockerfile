@@ -11,4 +11,4 @@ EXPOSE 80
 COPY /app /app
 
 # Start the app
-ENTRYPOINT dotnet ValuesMicroservice.dll
+ENTRYPOINT dotnet StatefulValuesMicroservice.dll

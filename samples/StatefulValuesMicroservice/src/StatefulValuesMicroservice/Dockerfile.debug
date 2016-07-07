@@ -15,4 +15,4 @@ RUN chmod 700 -R /clrdbg
 COPY /app /app
 
 # If we are launching through a remote debugger wait for it, otherwise start the app
-ENTRYPOINT ["/bin/bash", "-c", "if [ \"$REMOTE_DEBUGGING\" -eq 0 ]; then dotnet ValuesMicroservice.dll; else sleep infinity; fi"]
+ENTRYPOINT ["/bin/bash", "-c", "if [ \"$REMOTE_DEBUGGING\" -eq 0 ]; then dotnet StatefulValuesMicroservice.dll; else sleep infinity; fi"]

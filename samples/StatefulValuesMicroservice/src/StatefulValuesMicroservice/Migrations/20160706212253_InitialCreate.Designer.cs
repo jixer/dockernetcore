@@ -3,19 +3,20 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
-using ValuesMicroservice.Data;
+using StatefulValuesMicroservice.Data;
 
-namespace ValuesMicroservice.Migrations
+namespace StatefulValuesMicroservice.Migrations
 {
     [DbContext(typeof(StoredValuesContext))]
-    partial class StoredValuesContextModelSnapshot : ModelSnapshot
+    [Migration("20160706212253_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.0-rtm-21431");
 
-            modelBuilder.Entity("ValuesMicroservice.Entity.StoredValue", b =>
+            modelBuilder.Entity("StatefulValuesMicroservice.Entity.StoredValue", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();

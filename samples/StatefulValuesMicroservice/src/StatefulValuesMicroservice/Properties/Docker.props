@@ -11,7 +11,7 @@
 
     <!-- Use these properties to configure the process that will be started by the debugger in the container -->
     <DockerDebugStartProcess>dotnet</DockerDebugStartProcess>
-    <DockerDebugStartArgs>/app/ValuesMicroservice.dll</DockerDebugStartArgs>
+    <DockerDebugStartArgs>/app/StatefulValuesMicroservice.dll</DockerDebugStartArgs>
     <DockerDebugWorkingDirectory>/app/</DockerDebugWorkingDirectory>
   </PropertyGroup>
 </Project>

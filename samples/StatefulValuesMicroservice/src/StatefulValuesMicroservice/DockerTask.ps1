@@ -142,10 +142,10 @@ $DockerWorkingDirectory = "/app/"
 $ProjectName = $ProjectName -replace "[^a-zA-Z0-9]", ""
 
 # The name of the image created by the docker file
-$ImageName = "username/valuesmicroservice"
+$ImageName = "username/statefulvaluesmicroservice"
 
 # Calculate the name of the container created by the compose file
-$ContainerName = "${ProjectName}_valuesmicroservice"
+$ContainerName = "${ProjectName}_statefulvaluesmicroservice"
 
 # .net core runtime ID for the container (used to publish the app correctly)
 $RuntimeID = "debian.8-x64"

@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ValuesMicroservice.Entity;
+using StatefulValuesMicroservice.Entity;
 
-namespace ValuesMicroservice.Data
+namespace StatefulValuesMicroservice.Data
 {
     public class StoredValuesContext : DbContext
     {

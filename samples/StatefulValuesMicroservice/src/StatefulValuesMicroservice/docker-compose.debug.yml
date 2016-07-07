@@ -1,21 +1,21 @@
 version: '2'
 
 services:
-  valuesmicroservicedb:
+  statefulvaluesmicroservicedb:
     image: postgres
     environment:
       - POSTGRES_PASSWORD=test123!
-  valuesmicroservice:
+  statefulvaluesmicroservice:
     depends_on:
-      - valuesmicroservicedb
-    image: username/valuesmicroservice:Debug
+      - statefulvaluesmicroservicedb
+    image: username/statefulvaluesmicroservice:Debug
     environment:
       - REMOTE_DEBUGGING=${REMOTE_DEBUGGING}
-      - POSTGRES_DB=valuesmicroservicedb
+      - POSTGRES_DB=statefulvaluesmicroservicedb
       - POSTGRES_PASSWORD=test123!
     ports:
       - "80:80"
     links:
-      - valuesmicroservicedb
+      - statefulvaluesmicroservicedb
     volumes:
       - .:/app

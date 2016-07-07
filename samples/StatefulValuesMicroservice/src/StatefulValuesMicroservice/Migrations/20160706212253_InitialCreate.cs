@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace ValuesMicroservice.Migrations
+namespace StatefulValuesMicroservice.Migrations
 {
     public partial class InitialCreate : Migration
     {
