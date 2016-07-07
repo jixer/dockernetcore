@@ -9,6 +9,6 @@ Used the out-of-the box VisualStudio .NET Core WebAPI project template and then 
 See the following blog post for information: http://www.bloggedbychris.com/2016/05/24/setup-visual-studio-net-docker-windows-hour/
 
 ##StatefulValuesMicroservice
-Built on the StatelessValuesMicroservice and added a linked postgres container in order to make the previous example stateful
+Built on the StatelessValuesMicroservice example and added a linked postgres container in order to make the previous example stateful
 
 See the following blog post for information: PENDING
