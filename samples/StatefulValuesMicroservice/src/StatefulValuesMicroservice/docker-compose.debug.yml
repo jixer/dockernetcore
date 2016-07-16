@@ -10,12 +10,9 @@ services:
       - statefulvaluesmicroservicedb
     image: gsxr/statefulvaluesmicroservice:Debug
     environment:
-      - REMOTE_DEBUGGING=${REMOTE_DEBUGGING}
       - POSTGRES_DB=statefulvaluesmicroservicedb
       - POSTGRES_PASSWORD=test123!
     ports:
       - "80:80"
     links:
       - statefulvaluesmicroservicedb
-    volumes:
-      - .:/app
