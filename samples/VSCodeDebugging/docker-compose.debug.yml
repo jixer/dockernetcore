@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  vscodedebugging:
+    image: vscodedebugging:debug
+    build:
+      context: .
+      dockerfile: Dockerfile.debug
+    environment:
+      - REMOTE_DEBUGGING

@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  vscodedebugging:
+    image: vscodedebugging
+    build:
+      context: .
+      dockerfile: Dockerfile
