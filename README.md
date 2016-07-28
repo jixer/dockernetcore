@@ -7,12 +7,13 @@ Most of the source code in this repository is documented throughout my blog: [Bl
 Some of these projects were built using Visual Studio 2015 and others were build using Visual Studio Code.  Most of the project created using Visual Studio 2015 can still be opened and compiled using Visual Studio Code, but the documentation will pertain to a different IDE as described in the following list:
 
 **Visual Studio 2015**
-1. StatelessValuesMicroservice
-2. StatefulValuesMicroservice
+1. [StatelessValuesMicroservice](#statelessvaluesmicroservice)
+2. [StatefulValuesMicroservice](#statefulvaluesmicroservice)
 
-**Visual Studio Code**
-1. HelloWorldConsole
-2. HelloWebApi
+**VS Code**
+1. [HelloWorldConsole](#helloworldconsole)
+2. [HelloWebApi](#hellowebapi)
+3. [VSCodeDebugging](#vscodedebugging)
 
 # Documentation
 As mentioned previously, most of the source code in this repository is documented throughout my blog: [BloggedByChris.com](http://bloggedbychris.com/).  This section will mainly be used to reference individual blog posts, but in some cases, full documentation of the project is container herein.
@@ -56,3 +57,16 @@ Basic example of WebAPI value controller implementation.  Created using yeoman (
 **Linux and/or Mac users:** 
 
 Once you're in the root of the "HelloWebApi" directory, you can use `./build.sh` to compile, create the container, and execute the image in a temporary container.
+
+## VSCodeDebugging
+*NOTE: Created using Visual Studio Code*
+
+*LINK TO SOURCE: [samples/HelloWebApi](./samples/VSCodeDebugging)*
+
+This example includes debugging support for VS Code.
+
+Will soon add more documentation on my blog: http://bloggedbychris.com/
+
+To run, open the "VSCodeDebugging" folder in VS Code.  Press [F5] (Mac: [fn] + [F5]).  Try this again, but set a break point somewhere in the `main` method.
+
+> NOTE: After the console app exits, the container is not stopping.  Need to resolve this.
