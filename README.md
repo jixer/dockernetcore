@@ -67,6 +67,6 @@ This example includes debugging support for VS Code.
 
 Will soon add more documentation on my blog: http://bloggedbychris.com/
 
-To run, open the "VSCodeDebugging" folder in VS Code.  Press [F5]() (Mac: [fn] + [F5]).  Try this again, but set a break point somewhere in the `main` method.
+To run, open the "VSCodeDebugging" folder in VS Code.  Press [F5](#) (Mac: [fn] + [F5]).  Try this again, but set a break point somewhere in the `main` method.
 
 > NOTE: After the console app exits, the container is not stopping.  Need to resolve this.
