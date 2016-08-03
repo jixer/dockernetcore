@@ -64,11 +64,9 @@ Once you're in the root of the "HelloWebApi" directory, you can use `./build.sh`
 
 > SOURCE: [samples/VSCodeDebugging](./samples/VSCodeDebugging)*
 
-This example includes debugging support for VS Code.
+Full documentation for this example can be found on my blog: [Debug Dockerized .NET Core Apps in VS Code] (http://www.bloggedbychris.com/2016/08/03/debug-dockerized-net-core-apps-code/) 
 
-Will soon add more documentation on my blog: http://bloggedbychris.com/
-
-To run, open the "VSCodeDebugging" folder in VS Code.  Press \[F5\] (Mac: [fn] + [F5]) to initiate debugging.  Try this again, but set a break point somewhere in the `main` method.
+This example includes debugging support for VS Code.  To run, open the "VSCodeDebugging" folder in VS Code.  Press \[F5\] (Mac: [fn] + [F5]) to initiate debugging.  Try this again, but set a break point somewhere in the `main` method.
 
 > NOTE: After the console app exits, the container is not stopping.  Need to resolve this.
 
