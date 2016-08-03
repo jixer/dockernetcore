@@ -14,6 +14,7 @@ Some of these projects were built using Visual Studio 2015 and others were build
 1. [HelloWorldConsole](#helloworldconsole)
 2. [HelloWebApi](#hellowebapi)
 3. [VSCodeDebugging](#vscodedebugging)
+4. [VSCodeMvcDebugging](#vscodemvcdebugging)
 
 # Documentation
 As mentioned previously, most of the source code in this repository is documented throughout my blog: [BloggedByChris.com](http://bloggedbychris.com/).  This section will mainly be used to reference individual blog posts, but in some cases, full documentation of the project is container herein.
