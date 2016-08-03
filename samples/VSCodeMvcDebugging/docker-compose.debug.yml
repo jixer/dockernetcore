@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  vscodemvcdebugging:
+    image: vscodemvcdebugging:debug
+    build:
+      context: .
+      dockerfile: Dockerfile.debug
+    ports:
+      - "8090:80"
+    environment:
+      - REMOTE_DEBUGGING
